@@ -15,7 +15,11 @@ const Form = ({ setListDvds, calculateTotalPrice }) => {
 
   return (
     <div className=" flex flex-col items-center ">
-      <Textarea onChange={handleTextChange} className=" min-h-36 min-w-96" />
+      <Textarea
+        onChange={handleTextChange}
+        placeholder="Movies Name ..."
+        className=" min-h-36 min-w-96"
+      />
       <Button onClick={() => calculateTotalPrice()} className="mt-3 w-full">
         Calculer le prix total
       </Button>
